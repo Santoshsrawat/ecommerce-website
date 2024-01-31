@@ -1,0 +1,1333 @@
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:14 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:01:14 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:14 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:14 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:01:14 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:01:14 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:01:14 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:01:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:01:14 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:14 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:14 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:01:14 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:39 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:01:39 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:39 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:39 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:01:39 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:01:39 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:01:39 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:01:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:01:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:39 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:01:39 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:41 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:01:41 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:41 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:01:41 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:01:41 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:01:41 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:01:41 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:01:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:01:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:01:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:01:41 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:01:42 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:01:42 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:42 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/contact.php:0
+[29-Jan-2024 05:01:42 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/contact.php:2
+[29-Jan-2024 05:01:42 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:01:42 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:01:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:01:42 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:42 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/contact.php:0
+[29-Jan-2024 05:01:42 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/contact.php:2
+[29-Jan-2024 05:01:42 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:01:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:01:42 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:42 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/contact.php:0
+[29-Jan-2024 05:01:42 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/contact.php:2
+[29-Jan-2024 05:01:42 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:01:50 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:01:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/cart.php:0
+[29-Jan-2024 05:01:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/cart.php:2
+[29-Jan-2024 05:01:50 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:01:50 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:01:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:01:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/cart.php:0
+[29-Jan-2024 05:01:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/cart.php:2
+[29-Jan-2024 05:01:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:01:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:01:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/cart.php:0
+[29-Jan-2024 05:01:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/cart.php:2
+[29-Jan-2024 05:01:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:01:52 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:01:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:01:52 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:01:52 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:01:52 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:01:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:01:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:01:52 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:01:52 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:01:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:01:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:01:52 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:01:52 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:01:56 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:01:56 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:56 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:01:56 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:01:56 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:01:56 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:01:56 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:01:56 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:56 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:01:56 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:01:56 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:01:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:01:56 UTC] PHP Stack trace:
+[29-Jan-2024 05:01:56 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:01:56 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:01:56 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:05:46 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:05:46 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:46 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:05:46 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:05:46 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:05:46 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:05:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:05:46 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:46 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:05:46 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:05:46 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:05:46 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:05:46 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:46 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:05:46 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:05:46 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:05:50 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:05:50 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:05:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:05:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:05:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:05:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:05:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:05:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:05:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:05:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:05:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:05:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:48 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:06:48 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:48 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:48 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:06:48 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:06:48 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:06:48 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:06:48 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:06:48 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:48 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:48 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:06:48 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:50 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:06:50 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:06:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:06:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:06:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:06:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:06:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:06:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:52 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:06:52 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:52 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:06:52 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:06:52 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:06:52 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:06:52 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:06:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:06:52 UTC] PHP Stack trace:
+[29-Jan-2024 05:06:52 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:06:52 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:06:52 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:41 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:07:41 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:41 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:41 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:07:41 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:07:41 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:07:41 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:07:41 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:07:41 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:41 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:41 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:07:41 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:50 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:07:50 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:07:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:07:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:07:50 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:07:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:07:50 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:50 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:50 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:07:50 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:55 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:07:55 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:55 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:07:55 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:07:55 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:07:55 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:07:55 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:07:55 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:07:55 UTC] PHP Stack trace:
+[29-Jan-2024 05:07:55 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:07:55 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:07:55 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:16 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:09:16 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:16 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:16 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:16 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:16 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:16 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:16 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:16 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:16 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:16 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:20 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:09:20 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:20 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:20 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:20 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:20 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:20 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:20 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:20 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:20 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:20 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:21 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:22 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:09:22 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:22 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:09:22 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:22 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:09:22 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:22 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:09:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:09:22 UTC] PHP Stack trace:
+[29-Jan-2024 05:09:22 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:09:22 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:09:22 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:04 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:04 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:04 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:04 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:06 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:06 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:06 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/index.php:2
+[29-Jan-2024 05:10:06 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 4
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from banner where status=\'1\' order by order_no asc') /home/estoreoxpress/public_html/Yuvraj/index.php:4
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/index.php on line 8
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/index.php:8
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:06 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = *uninitialized*, $product_id = *uninitialized*, $search_str = *uninitialized*, $sort_order = *uninitialized*, $is_best_seller = *uninitialized*, $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:63
+[29-Jan-2024 05:10:06 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 56
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:06 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select product.*,categories.categories,product_attributes.mrp,product_attributes.price,product_attributes.qty from product,categories,product_attributes where product.status=1 and product.id=product_attributes.product_id and product.best_seller=1  and product.categories_id=categories.id  group by product.id  order by product.id desc  limit 4') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:56
+[29-Jan-2024 05:10:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 58
+[29-Jan-2024 05:10:06 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:06 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/index.php:0
+[29-Jan-2024 05:10:06 UTC] PHP   2. get_product($con = FALSE, $limit = 4, $cat_id = '', $product_id = '', $search_str = '', $sort_order = '', $is_best_seller = 'yes', $sub_categories = *uninitialized*, $attr_id = *uninitialized*) /home/estoreoxpress/public_html/Yuvraj/index.php:110
+[29-Jan-2024 05:10:06 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:58
+[29-Jan-2024 05:10:21 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:10:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:10:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:10:21 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:10:21 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:10:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:10:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:10:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:10:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:10:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:10:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:10:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:10:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:10:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:12:46 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:12:46 UTC] PHP Stack trace:
+[29-Jan-2024 05:12:46 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:12:46 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:12:46 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:12:46 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'root', $password = '', $database = 'ecomm') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:12:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:12:46 UTC] PHP Stack trace:
+[29-Jan-2024 05:12:46 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:12:46 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:12:46 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:12:46 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:12:46 UTC] PHP Stack trace:
+[29-Jan-2024 05:12:46 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:12:46 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:12:46 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:15:21 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:15:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:21 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:15:21 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:15:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:15:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:21 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:15:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:15:21 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:21 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:21 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:21 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:15:30 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:15:30 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:30 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:30 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:2
+[29-Jan-2024 05:15:30 UTC] PHP   3. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:15:30 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 16
+[29-Jan-2024 05:15:30 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:30 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:30 UTC] PHP   2. get_safe_value($con = FALSE, $str = 'yuvrajkohli8090ylt@gmail.com') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:5
+[29-Jan-2024 05:15:30 UTC] PHP   3. mysqli_real_escape_string($link = FALSE, $string_to_escape = 'yuvrajkohli8090ylt@gmail.com') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:16
+[29-Jan-2024 05:15:30 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 16
+[29-Jan-2024 05:15:30 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:30 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:30 UTC] PHP   2. get_safe_value($con = FALSE, $str = '123') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:6
+[29-Jan-2024 05:15:30 UTC] PHP   3. mysqli_real_escape_string($link = FALSE, $string_to_escape = '123') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:16
+[29-Jan-2024 05:15:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/login_submit.php on line 8
+[29-Jan-2024 05:15:30 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:30 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:30 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from users where email=\'\' and password=\'\'') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:8
+[29-Jan-2024 05:15:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/login_submit.php on line 9
+[29-Jan-2024 05:15:30 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:30 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:30 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/login_submit.php:9
+[29-Jan-2024 05:15:33 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:15:33 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:33 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:33 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:33 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:15:33 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:15:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:15:33 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:33 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:33 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:33 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:15:33 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:15:33 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:33 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:33 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:33 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:15:39 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:15:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:39 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:39 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:15:39 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:15:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:15:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:39 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:39 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:15:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:15:39 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:39 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:15:39 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:15:39 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:15:45 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:15:45 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:45 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:45 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:2
+[29-Jan-2024 05:15:45 UTC] PHP   3. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:15:45 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 16
+[29-Jan-2024 05:15:45 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:45 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:45 UTC] PHP   2. get_safe_value($con = FALSE, $str = 'yuvrajkohli8090ylt@gmail.com') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:5
+[29-Jan-2024 05:15:45 UTC] PHP   3. mysqli_real_escape_string($link = FALSE, $string_to_escape = 'yuvrajkohli8090ylt@gmail.com') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:16
+[29-Jan-2024 05:15:45 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 16
+[29-Jan-2024 05:15:45 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:45 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:45 UTC] PHP   2. get_safe_value($con = FALSE, $str = '123') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:6
+[29-Jan-2024 05:15:45 UTC] PHP   3. mysqli_real_escape_string($link = FALSE, $string_to_escape = '123') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:16
+[29-Jan-2024 05:15:45 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/login_submit.php on line 8
+[29-Jan-2024 05:15:45 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:45 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:45 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from users where email=\'\' and password=\'\'') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:8
+[29-Jan-2024 05:15:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/login_submit.php on line 9
+[29-Jan-2024 05:15:45 UTC] PHP Stack trace:
+[29-Jan-2024 05:15:45 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:15:45 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/login_submit.php:9
+[29-Jan-2024 05:16:36 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:16:36 UTC] PHP Stack trace:
+[29-Jan-2024 05:16:36 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:16:36 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:16:36 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:16:36 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:16:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:16:36 UTC] PHP Stack trace:
+[29-Jan-2024 05:16:36 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:16:36 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:16:36 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:16:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:16:36 UTC] PHP Stack trace:
+[29-Jan-2024 05:16:36 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:16:36 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:16:36 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:17:11 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:17:11 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:11 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:17:11 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:17:11 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:17:11 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:17:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:17:11 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:11 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:17:11 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:17:11 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:17:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:17:11 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:11 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:17:11 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:17:11 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:17:12 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:17:12 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:12 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:17:12 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:17:12 UTC] PHP   3. require() /home/estoreoxpress/public_html/Yuvraj/top.php:2
+[29-Jan-2024 05:17:12 UTC] PHP   4. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:17:12 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 6
+[29-Jan-2024 05:17:12 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:12 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:17:12 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:17:12 UTC] PHP   3. mysqli_query($link = FALSE, $query = 'select * from categories where status=1 order by categories asc') /home/estoreoxpress/public_html/Yuvraj/top.php:6
+[29-Jan-2024 05:17:12 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/top.php on line 8
+[29-Jan-2024 05:17:12 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:12 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login.php:0
+[29-Jan-2024 05:17:12 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login.php:2
+[29-Jan-2024 05:17:12 UTC] PHP   3. mysqli_fetch_assoc($result = NULL) /home/estoreoxpress/public_html/Yuvraj/top.php:8
+[29-Jan-2024 05:17:18 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'estoreoxpress_user'@'localhost' to database 'estoreoxpress_test' in /home/estoreoxpress/public_html/Yuvraj/connection.inc.php on line 3
+[29-Jan-2024 05:17:18 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:18 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:17:18 UTC] PHP   2. require() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:2
+[29-Jan-2024 05:17:18 UTC] PHP   3. mysqli_connect($host = 'localhost', $user = 'estoreoxpress_user', $password = 'EstoreOXpress@12345', $database = 'estoreoxpress_test') /home/estoreoxpress/public_html/Yuvraj/connection.inc.php:3
+[29-Jan-2024 05:17:18 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 16
+[29-Jan-2024 05:17:18 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:18 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:17:18 UTC] PHP   2. get_safe_value($con = FALSE, $str = 'yuvrajkohli8090ylt@gmail.com') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:5
+[29-Jan-2024 05:17:18 UTC] PHP   3. mysqli_real_escape_string($link = FALSE, $string_to_escape = 'yuvrajkohli8090ylt@gmail.com') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:16
+[29-Jan-2024 05:17:18 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/functions.inc.php on line 16
+[29-Jan-2024 05:17:18 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:18 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:17:18 UTC] PHP   2. get_safe_value($con = FALSE, $str = '123') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:6
+[29-Jan-2024 05:17:18 UTC] PHP   3. mysqli_real_escape_string($link = FALSE, $string_to_escape = '123') /home/estoreoxpress/public_html/Yuvraj/functions.inc.php:16
+[29-Jan-2024 05:17:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/estoreoxpress/public_html/Yuvraj/login_submit.php on line 8
+[29-Jan-2024 05:17:18 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:18 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:17:18 UTC] PHP   2. mysqli_query($link = FALSE, $query = 'select * from users where email=\'\' and password=\'\'') /home/estoreoxpress/public_html/Yuvraj/login_submit.php:8
+[29-Jan-2024 05:17:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/estoreoxpress/public_html/Yuvraj/login_submit.php on line 9
+[29-Jan-2024 05:17:18 UTC] PHP Stack trace:
+[29-Jan-2024 05:17:18 UTC] PHP   1. {main}() /home/estoreoxpress/public_html/Yuvraj/login_submit.php:0
+[29-Jan-2024 05:17:18 UTC] PHP   2. mysqli_num_rows($result = NULL) /home/estoreoxpress/public_html/Yuvraj/login_submit.php:9
